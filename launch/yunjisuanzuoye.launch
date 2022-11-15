@@ -7,7 +7,7 @@
     </include>
 
     <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
-		<param name="port" value="10000"/>
+		<param name="port" value="9090"/>
 	</include>
 
 </launch>
