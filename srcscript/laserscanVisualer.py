@@ -72,7 +72,7 @@ class laserscanvisual:
         # cv2.arrowedLine(frame, (300, 300), (300, 350), (0, 0, 255), thickness=3, line_type=cv2.LINE_4, shift=0, tipLength=0.1)
         self.laserscan_pub.publish(self.bridge.cv2_to_imgmsg(frame, "bgr8"))
         self.lidardis_pub.publish(lidardis)
-        cv2.imshow('frame',frame)
+        # cv2.imshow('frame',frame)
         cv2.waitKey(1)
 
 
