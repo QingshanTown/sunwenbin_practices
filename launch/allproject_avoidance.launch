@@ -1,0 +1,19 @@
+<launch>
+    
+    <!-- <include file="$(find robot_vision)/launch/robot_following.launch">
+    </include> -->
+
+    <include file="$(find robot_vision)/launch/laserscanvisual.launch">
+    </include>
+
+    <include file="$(find sunwenbin_practices)/launch/face_recognition.launch">
+    </include>
+
+    <include file="$(find sunwenbin_practices)/launch/robot_pose_ekf_copy.launch">
+    </include>
+
+    <node pkg = "sunwenbin_practices" type = "laserscanrepublisher.py" name = "laser_republisher" output = "screen"/>
+    <node pkg = "sunwenbin_practices" type = "imu_odom_republisher.py" name = "imu_odom_republisher" output = "screen"/>
+    <node pkg = "sunwenbin_practices" type = "robot_avoidance.py" name = "robot_avoidance" output = "screen"/>
+
+</launch>

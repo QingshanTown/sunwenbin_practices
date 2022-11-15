@@ -1,0 +1,3 @@
+<launch>
+    <node pkg = "sunwenbin_practices" type = "face_collect.py" name = "face_data_collect" output = "screen"/>
+</launch>

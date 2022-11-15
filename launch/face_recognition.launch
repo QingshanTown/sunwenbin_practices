@@ -1,0 +1,4 @@
+<launch>
+    <node pkg = "sunwenbin_practices" type = "face_recognition.py" name = "face_recognition" output = "screen"/>
+    <node name="face_recognition_compressed_image" pkg="image_transport" type="republish" args="raw in:=face_recognition_image compressed out:=face_recognition_image" />
+</launch>

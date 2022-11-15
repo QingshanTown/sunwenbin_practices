@@ -1,0 +1,5 @@
+<launch>
+    <node pkg = "sunwenbin_practices" type = "laserscanVisualer.py" name = "laser_listener" output = "screen"/>
+    <node name="laserscan_compressed_image" pkg="image_transport" type="republish" args="raw in:=laserscanvisual compressed out:=laserscanvisual" />
+    <node name="odomdir_compressed_image" pkg="image_transport" type="republish" args="raw in:=odomdir compressed out:=odomdir" />
+</launch>

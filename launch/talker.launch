@@ -1,0 +1,3 @@
+<launch>
+    <node pkg = "sunwenbin_practices" type = "talker" name = "talker" output = "screen"/>
+</launch>
